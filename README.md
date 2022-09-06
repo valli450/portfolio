@@ -10,5 +10,7 @@ email: v.dranov450@gmail.com
 Technologies Used
 
 HTML 
+
 CSS 
+
 JavaScript
