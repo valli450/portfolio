@@ -1,0 +1,261 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" size="32x32" href="./images/logoweb.jpeg">
+        <title>Val's portfolio page</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="time('10')">
+        <div class="whale-section">
+            <header class="header" id="home-block">
+                <div class="header__line">
+                    <div class="header__line__logo">
+                        <img src="./images/logomain.jpeg" alt="logo" />
+                    </div>
+                    <div class="header__line__nav">
+                        <nav class="header__line__nav__block">
+                            <li>
+                                <a href="#about-block">About</a>
+                            </li>
+                            <li>
+                                <a href="#projects-block">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact-block">Contact</a>
+                            </li>
+                        </nav>
+                        <div class="header__line__nav__actions">
+                            <svg xmlns="http://www.w3.org/2000/svg" onclick="closeMenu()" class="ionicon close-icon" viewBox="0 0 512 512">
+                                <title>Close</title>
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
+                            </svg>
+                            <div class="header__line__nav__actions__block">
+                                <div class="header__line__nav__actions__block__sunny nav-actions sunny-block" onclick="darkModeOff()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon sunny" viewBox="0 0 512 512">
+                                        <title>Sunny</title>
+                                        <path fill="#fff" stroke="fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/>
+                                        <circle cx="256" cy="256" r="80" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/>
+                                    </svg>
+                                    <p>Light</p>
+                                </div>
+                                <div class="header__line__nav__actions__block__moon nav-actions dark-block" onclick="darkModeOn()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon moon" viewBox="0 0 512 512">
+                                        <title>Moon</title>
+                                        <path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                                    </svg>
+                                    <p>Moon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__line__rightside">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" id="burger-icon" onclick="openMenu()" viewBox="0 0 512 512">
+                            <title>Menu</title>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__text">
+                    <h1 class="greeding-text"></h1>
+                </div>
+            </header>
+            <main class="content">
+                <div class="content__about about" id="about-block">
+                    <div class="about__text">
+                        <div class="about__text__head">
+                            <h2>Me, Myself and I</h2>
+                        </div>
+                        <div class="about__text__main">
+                            <p>
+                                Hello, this is my quick story: I moved to the states in my early 20’s. 
+                                I graduated from Moscow State University with a BA in Economics and a minor in IT. 
+                                It was tough to find work initially but I managed to become a manager at TjMaxx. 
+                                In Moscow, I was active in athletics was was training to become an Olympic wrestler. 
+                                Athletics and Training taught me how to be a discipline and strong willed. 
+                                I have taken on Codeacademy course work and completed several front end design certificates.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__certificates">
+                        <div class="about__certificates__head">
+                            <h2>Diplomas and Certificates</h2>
+                        </div>
+                        <div class="about__certificates__main">
+                            <div class="about__certificates__main__gallery desktop image-galery">
+                                <div class="image-galery__block">
+                                    <img src="./images/certificates/front-end-career.jpeg" alt="Frontend certificate" class="image-certificate" onclick="imageError()">
+                                </div>
+                                <p class="image-error">Please click the name of the certificate on the right side of the screen</p>
+                            </div>
+                            <ul class="certificates__links">
+                                <li class="python" onclick="openCertificate('python-block')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <title>Image</title>
+                                        <rect x="48" y="80" width="416" height="352" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/>
+                                        <circle cx="336" cy="176" r="32" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                                        <path d="M304 335.79l-90.66-90.49a32 32 0 00-43.87-1.3L48 352M224 432l123.34-123.34a32 32 0 0143.11-2L464 368" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                                    </svg>
+                                    <p class="python-link">Python</p>
+                                    <div class="link__block python-block">
+                                        <img src="./images/certificates/python.jpeg" alt="Python certificate" />
+                                        <a href="https://www.codecademy.com/profiles/Valli450/certificates/6c152bd262967f8c941c9707ed636bda">Codecademy</a>
+                                    </div>
+                                </li>
+                                <li class="js" onclick="openCertificate('js-block')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <title>Image</title>
+                                        <rect x="48" y="80" width="416" height="352" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><circle cx="336" cy="176" r="32" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M304 335.79l-90.66-90.49a32 32 0 00-43.87-1.3L48 352M224 432l123.34-123.34a32 32 0 0143.11-2L464 368" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                                    </svg>
+                                    <p class="js-link">JavaScript</p>
+                                    <div class="link__block js-block">
+                                        <img src="./images/certificates/js.jpeg" alt="JavaScript certificate"  />
+                                        <a href="https://www.codecademy.com/profiles/Valli450/certificates/705dcb15de0da4dd9d9fc4f3274b430e">Codecademy</a>
+                                    </div>
+                                </li>
+                                <li class="fee" onclick="openCertificate('fee-block')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <title>Image</title>
+                                        <rect x="48" y="80" width="416" height="352" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><circle cx="336" cy="176" r="32" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M304 335.79l-90.66-90.49a32 32 0 00-43.87-1.3L48 352M224 432l123.34-123.34a32 32 0 0143.11-2L464 368" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                                    </svg>
+                                    <p class="fee-link">Front-End Engineer</p>
+                                    <div class="link__block fee-block">
+                                        <img src="./images/certificates/front-end-career.jpeg" alt="Front-End Engineer certificate"/>
+                                        <a href="https://www.codecademy.com/profiles/Valli450/certificates/5f85dd867b67b60014ac9ea3">Codecademy</a>
+                                    </div>  
+                                </li>
+                                <li class="mgimo" onclick="openCertificate('mgimo-block')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <title>Image</title>
+                                        <rect x="48" y="80" width="416" height="352" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><circle cx="336" cy="176" r="32" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M304 335.79l-90.66-90.49a32 32 0 00-43.87-1.3L48 352M224 432l123.34-123.34a32 32 0 0143.11-2L464 368" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                                    </svg>
+                                    <p class="mgimo-link">Information technology in business</p>
+                                    <div class="link__block mgimo-block">
+                                        <img src="./images/certificates/mgimo.jpeg" alt="Mgimo logo"/>
+                                        <a href="https://en.wikipedia.org/wiki/Moscow_State_Institute_of_International_Relations">Moscow State Institute of International Relations</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__projects projects" id="projects-block">
+                    <div class="projects__head">
+                        <h2>My projects</h2>
+                    </div>
+                    <div class="projects__main">
+                        <div class="projects__main__block calculator">
+                            <div class="projects__main__block__more">
+                                <h3>Calculator app</h3>
+                                <div class="projects__main__block__more__links">
+                                    <a href="https://valli450.github.io/calculator/">Preview Site</a>
+                                    <a href="https://github.com/valli450/calculator">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__main__block job-listings">
+                            <div class="projects__main__block__more">
+                                <h3>Job listings with filtering</h3>
+                                <div class="projects__main__block__more__links">
+                                    <a href="https://valli450.github.io/job-listings/">Preview Site</a>
+                                    <a href="https://github.com/valli450/job-listings">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__main__block payapi">
+                            <div class="projects__main__block__more">
+                                <h3>PayAPI multi-page solution</h3>
+                                <div class="projects__main__block__more__links">
+                                    <a href="https://valli450.github.io/payAPI/">Preview Site</a>
+                                    <a href="https://github.com/valli450/payAPI">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__main__block rest-countries">
+                            <div class="projects__main__block__more">
+                                <h3>REST Countries API with color theme switcher</h3>
+                                <div class="projects__main__block__more__links">
+                                    <a href="https://valli450.github.io/-REST-Countrie-REACT/">Preview Site</a>
+                                    <a href="https://github.com/valli450/-REST-Countrie-REACT">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__main__block space-tourism">
+                            <div class="projects__main__block__more">
+                                <h3>Space tourism multi-page website</h3>
+                                <div class="projects__main__block__more__links">
+                                    <a href="https://valli450.github.io/space-tourism/index.html">Preview Site</a>
+                                    <a href="https://github.com/valli450/space-tourism">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__main__block url-shortening">
+                            <div class="projects__main__block__more">
+                                <h3>URL shortening API landing page</h3>
+                                <div class="projects__main__block__more__links">
+                                    <a href="https://valli450.github.io/URL-shortening/">Preview Site</a>
+                                    <a href="https://github.com/valli450/URL-shortening">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer" id="contact-block">
+                <div class="footer__head">
+                    <div class="footer__head__text">
+                        <h2>Get in touch</h2>
+                        <p>I’m currently looking for any new opportunities, my inbox is always open.</p>
+                    </div>
+                    <div class="footer__head__email">
+                        <a href="mailto:v.dranov450@gmail.com" class="mail" id="mainmaill" onmouseover="textMoving()" onmouseout="breakMoving()">Contact me</a>
+                    </div>
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__menu__list">
+                        <li>
+                            <a href="#home-block" onclick="time('10')">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-block">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects-block">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-block">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu__social">
+                        <li>
+                            <a class="social__link github-light" href="#">
+                                <img src="./images/GitHub-Mark-Light-32px.png" alt="GitHub logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link github__dark" href="#">
+                                <img src="./images/GitHub-Mark-32px.png" alt="GitHub logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link codewars">
+                                <img src="./images/cwlogo.svg" alt="Codewars logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__link frontendmentor">
+                                <img src="./images/favicon-32x32.png" alt="Frontend mentor logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <div class="container-wrap" onclick="closeCertificate()"></div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
