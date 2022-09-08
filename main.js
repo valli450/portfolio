@@ -43,7 +43,6 @@ function openMenu(){
     if(windowWidth < 479){
         wrapBlock.style.zIndex = '1';
         wrapBlock.style.opacity = '1';
-        document.body.style.position = 'fixed';
     }
     setTimeout(function(){
         burgerIcon.style.opacity = 0;
@@ -56,7 +55,6 @@ function closeMenu(){
     closeIcon.style.transform = "rotate(-720deg)";
     burgerIcon.style.transform = "rotate(720deg)";
     setTimeout(function() {
-        document.body.style.position = 'static';
         menuBlock.style.zIndex = '-2';
         parentBlock.style.overflow = "hidden";
         wrapBlock.style.zIndex = '-1';
