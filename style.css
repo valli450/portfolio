@@ -53,7 +53,7 @@ body{
 }
 
 .header__line__nav{
-    position: absolute;
+    position: fixed;
     width: 40%;
     height: 50rem!important;
     top: 0;
