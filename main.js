@@ -172,3 +172,9 @@ function breakMoving(){
     numberLetter = 200;
 }
 
+/* Mobile project block */
+function mobileProject(project){
+    document.querySelector(`.${project}`).style.opacity = '1';
+    document.querySelector(`.${project}`).style.backgroundSize = '110%';
+}
+
