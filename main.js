@@ -173,8 +173,18 @@ function breakMoving(){
 }
 
 /* Mobile project block */
+const blockNameList = ['calculator-block', 'job-istings-block', 'PayAPI-block', 'countries-block', 'space-block', 'shortening-block'];
+
 function mobileProject(project){
+    close()
     document.querySelector(`.${project}`).style.opacity = '1';
     document.querySelector(`.${project}`).style.backgroundSize = '110%';
+}
+
+function close(){
+    blockNameList.forEach(block => {
+        document.querySelector(`.${block}`).style.opacity = 0;
+        document.querySelector(`.${block}`).style.backgroundSize = '100%';
+    })
 }
 
