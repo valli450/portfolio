@@ -1041,6 +1041,7 @@ body{
     .header__text{
         display: flex;
         padding: 0 5rem;
+        border: 1px solid red;
     }
 
     .header__text h1{
