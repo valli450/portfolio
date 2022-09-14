@@ -3,7 +3,7 @@ const wrapBlock = document.querySelector(".container-wrap");
 const windowWidth = window.screen.width;
 
 /* Head text */
-const text = "Hi, I'm Val, web developer";
+const text = "Hi! I'm Val A web developer";
 const greedingText = document.querySelector(".greeding-text");
 let number = 0;
 
