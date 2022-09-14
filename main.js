@@ -18,7 +18,7 @@ function time(n){
 }
 
 function greedingAnimation(){
-    if(number !== 26){
+    if(number !== 27){
         if(number === 12){
             greedingText.innerHTML += '<br />';
         }
